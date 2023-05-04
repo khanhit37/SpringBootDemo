@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>HelloW</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!--css-->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+
+    <!--js-->
+    <script th:src="@{/js/bootstrap.js}"></script>
+
+</head>
+<body>
+<h3>Điền tên của người dùng: </h3>
+<form method="get" action="/hello">
+    <input type="input" name="name">
+    <button type="submit">Submit</button>
+</form>
+
+<a th:href="@{/profile}" class="btn btn-primary">Test Profile</a>
+</body>
+
+</html>
